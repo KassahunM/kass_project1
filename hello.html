@@ -1,38 +1,167 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            My web page
-        </title>
-        <style>
-            body{
-              background-color:aqua;
-              font-family: cursive; 
-                }
-            #wrapper{
-                margin:auto;
-                width: 65%;
-                background-color: beige;
-                border:1px solid red;
-                padding:20px;
-            }
-            h1{
-                color: brown;
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <div id='wrapper'>
-            <h1>
-                Hello world page. Hello again
-            </h1>
-            <p> My first paragraph</p>
-            <p>my second paragraph</p>
-            <h3> This is heading three added on GitHub</h3>
-            <h5> This is heading 5 added on GitHub</h5>
-            <p> third paragraph on gthub</p>
-            <div> This div on github</div>
-        </div>
-    </body>
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KassahunM Git Exercise</title>
+    <style>
+        #wrapper0{
+            background-color: aqua;
+            margin: auto;
+            width: 75%;
+            padding: 12px;
+        }
+        #mycolor{
+            width: 50%;
+            height: 200px;
+            border: 1px dashed red;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        #wrapper{
+            margin: auto;
+            width: 90%;
+            border: 1px solid rgb(44, 128, 62);
+            background-color: honeydew;
+            text-align: center;
+        }
+        #input-container{
+          
+            background-color: rgb(206, 211, 211);
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            /*flex-direction: column;*/
+            /*text-align: center*/
+            height: 300px;
+            overflow: scroll;
+        }
+        #output-container {
+          
+          background-color: rgb(130, 131, 109);
+          padding: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          /*flex-direction: column;*/
+          /*text-align: center*/
+          height: 300px;
+          overflow: scroll;
+      }
+        #input-container p, #output-container p{
+            /*width: 255px;*/
+            margin-right: 6px;
+            width: 30%;
+        }
+        #input-container p input{
+            background-color: rgb(125, 128, 113);
+            width: 25%;
+            color: rgb(240, 230, 239);
+            text-align: center;
+        }
+        #output-container p input{
+            background-color: rgb(11, 11, 27);
+            width: 25%;
+            color: rgb(162, 180, 167);
+            text-align: center;
+            border: none;
+            font-weight: bolder;
+        }
+        h1{
+            
+            
+            background-color: rgb(95, 155, 170);
+            padding: 20px;
+            border: 1px solid red;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow:white 2px 3px 2px;
+            
+        }
+        h2 {
+            
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid red;
+            text-align: center;
+            margin-bottom: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper0">
+        <h1>Git and github exercises</h1>
+        <h2>This heading 2 is added on the remote server github</h2>
+        <h3>This the third heading added on github server</h3>
+        <h4>This heading 4 is added on client side</h4>
+        <h5>Heading 5 is added in the feature branch</h5>
+        <h6>h6 is added to feature branch</h6>
+        <!--<form action="">-->
+            <p> User Name: <input type="text" id="usr" name="username"></p>
+            <p> Email <input type="email" id="eml" name="email"></p>
+            <p> password: <input type="password" id="psrd" name="password"></p>
+            <button onclick="myform()">Submit</button>
+            <p style="color: brown;"> Submit personal data</p>
+         <!--</form>-->
+            <div id="demo"></div>
+
+            <h1>Table of contents</h1>
+            <ul>
+                <li><a href="#section1">Section1</a></li>
+                <li><a href="#section2">Section2</a></li>
+                <li><a href="#section3">Section3</a></li>
+                <li><a href="#section4">Favorite color</a></li>
+            </ul>
+            <div id="section1">
+                <h2>Section1</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                </p>
+
+            </div>
+            <div id="section2">
+                <h2>Section2</h2>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32 
+                </p>
+
+            </div>
+            <div id="section3">
+                <h2>Section3</h2>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p> 
+            </div> 
+                
+            <h2 id="section4">Favorite color</h2>
+            <p>Choose color<input type="color" id="favcolor"></p>
+            <button onclick="colorFunction()">click to change color of the next area</button>
+            <p id="mycolor"> The color of this area will be changed when the above button is clicked</p>
+              
+
+    </div> 
+
+    <script>
+        var user = document.querySelector("#usr");
+        var email=document.querySelector("#eml");
+        var password=document.querySelector("#psrd");
+        function myform(){
+            var demo=document.querySelector('#demo');
+            demo.innerHTML=`Username: ${user.value} <br><br> Email: ${email.value} <br><br> Password: ${password.value}`
+        
+        }
+
+        var inputColor=document.querySelector("#favcolor");
+        var mycolor=document.querySelector("#mycolor");
+        function colorFunction(){
+            mycolor.style.backgroundColor=inputColor.value;
+
+        }
+
+    </script>
